@@ -2,3 +2,25 @@
     padding: 0;
     margin: 0;
 }
+
+h1{
+    text-align: center;
+    font-size: 6rem;
+    padding-top: 2.5vh;
+}
+
+div#canvas{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p#desc{
+    width: 75vw;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
