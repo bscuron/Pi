@@ -1,6 +1,6 @@
 let canvas;
 let diameter;
-let pi = null;
+let pi = '';
 let points = [];
 let inner = 0;
 let total = 0;
@@ -101,4 +101,9 @@ class Point{
 
         total++;
     }
+}
+
+function windowResized(){
+    resizeCanvas(windowWidth * 0.75, windowHeight * 0.75);
+    diameter = min(width, height);
 }

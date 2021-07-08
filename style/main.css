@@ -3,24 +3,46 @@
     margin: 0;
 }
 
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh 77.5vh 7.5vh;
+}
+
+div#header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
 h1{
+    color: white;
     text-align: center;
     font-size: 6rem;
     padding-top: 2.5vh;
 }
 
-div#canvas{
+div#canvas-container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+p#pi{
     position: absolute;
     left: 50%;
-    top: 50%;
+    right: 50%;
     transform: translate(-50%, -50%);
 }
 
 p#desc{
-    width: 75vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    /* width: 75vw; */
     font-size: 1.25rem;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
+    /* position: absolute; */
+    /* bottom: 5%; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
 }
