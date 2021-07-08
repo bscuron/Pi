@@ -93,7 +93,7 @@ class Point{
         this.x = x;
         this.y = y;
         this.dist = dist(0, 0, this.x, this.y);
-        this.inCircle = this.dist < diameter/2 ? true : false;
+        this.inCircle = this.dist <= diameter/2 ? true : false;
 
         if(this.inCircle)
             inner++;
