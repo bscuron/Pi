@@ -92,7 +92,6 @@ class Point{
     constructor(x, y){
         this.x = x;
         this.y = y;
-        line(0, 0, this.x, this.y);
         this.dist = dist(0, 0, this.x, this.y);
         this.inCircle = this.dist < diameter/2 ? true : false;
 
